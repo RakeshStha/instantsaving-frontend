@@ -28,7 +28,7 @@
     "eject": "react-scripts eject"
   },
   "proxy": {
-    "*":{ "target" : "https://instantsaving-api.onrender.com/"}
+    "*":{ "target" : "https://instantsaving-api.onrender.com/", "changeOrigin" : true}
  },
   "eslintConfig": {
     "extends": "react-app"

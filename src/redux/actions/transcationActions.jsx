@@ -2,7 +2,6 @@ import axios from 'axios';
 import { GET_ERRORS, TRANSCATION_LOADING } from './transcationTypes';
 import { Config } from '../../Config'; 
 let API = Config.BaseUrl;
-
 export const createTranscation = (data) => {
     let url = `${API}/api/transcations/transcation`
     return dispatch => {
