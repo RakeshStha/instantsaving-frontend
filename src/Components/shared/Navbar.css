@@ -1,0 +1,39 @@
+nav {
+    /* background: rgb(11, 13, 15) !important; */
+    font-family: var(--Oswald);
+    letter-spacing: 1px;
+}
+.navbar-brand {
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.btn-login {
+    background-color: #fff;
+    color: #000000 !important;
+}
+
+.btn-register {
+    background-color: rgb(233, 159, 0);
+    color: #000000 !important;
+}
+
+.active{
+    color: rgb(233, 159, 0) !important;
+}
+
+.rules-icon{
+    font-size: 41px;
+    position: fixed;
+    z-index: 1000;
+    bottom: 62px;
+    right: 47px;
+}
+
+.rules-img{
+    position: fixed;
+    z-index: 1000;
+    bottom: 57px;
+    right: 40px;
+    height: 40px;
+}
