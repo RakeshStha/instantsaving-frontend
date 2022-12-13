@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 export const getUserDetail = (id) => {
-    let url = `/api/users/user/${id}`
+    let url = `${API}/api/users/user/${id}`
     return dispatch => {
        // dispatch(processing(notificationConstants.PROCESSING, true))
         return axios.get(url)
@@ -20,7 +20,7 @@ export const getUserDetail = (id) => {
   }
 
   export const getAllUser = () => {
-    let url = `/api/users/users`
+    let url = `${API}/api/users/users`
     return dispatch => {
         return axios.get(url)
             .then(

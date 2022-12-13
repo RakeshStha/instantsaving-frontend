@@ -1,8 +1,10 @@
 import axios from 'axios';
+import { Config } from '../../../Config'; 
 
+let API = Config.BaseUrl;
 
 export const getUserLoan = (id) => {
-    let url = `/api/users/loan/${id}`
+    let url = `${API}/api/users/loan/${id}`
     return dispatch => {
        // dispatch(processing(notificationConstants.PROCESSING, true))
         return axios.get(url)
