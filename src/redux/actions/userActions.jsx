@@ -1,8 +1,9 @@
 import axios from 'axios';
-
+import { Config } from '../../Config'; 
+let API = Config.BaseUrl;
 
 export const getUserDetail = (id) => {
-    let url = `${API}/api/users/user/${id}`
+    let url = `/api/users/user/${id}`
     return dispatch => {
        // dispatch(processing(notificationConstants.PROCESSING, true))
         return axios.get(url)
@@ -20,7 +21,7 @@ export const getUserDetail = (id) => {
   }
 
   export const getAllUser = () => {
-    let url = `${API}/api/users/users`
+    let url = `/api/users/users`
     return dispatch => {
         return axios.get(url)
             .then(

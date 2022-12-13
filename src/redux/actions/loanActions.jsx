@@ -1,6 +1,5 @@
 import axios from 'axios';
-import { Config } from '../../../Config'; 
-
+import { Config } from '../../Config'; 
 let API = Config.BaseUrl;
 
 export const getUserLoan = (id) => {
