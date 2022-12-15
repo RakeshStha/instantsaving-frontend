@@ -17,6 +17,19 @@ const Rules = () => {
           </li>
           <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="ms-2 me-auto">
+              <div class="fw-bold">In case if there is family problems loan  - Interest Rate</div>
+            </div>
+            <span class="badge bg-primary rounded-pill">8%</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Emergency Loan Processing</div>
+              Contact Aseem Maharjan <b>"9849029127"</b> for loan processing.
+            </div>
+            {/* <span class="badge bg-primary rounded-pill">12%</span> */}
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
               <div class="fw-bold">Loan Processing</div>
               For each members loan amount will be the Total Members Number/Total Members Saving Amount.
             </div>

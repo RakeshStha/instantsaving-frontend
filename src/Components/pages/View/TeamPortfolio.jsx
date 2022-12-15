@@ -136,7 +136,7 @@ const TeamPortfolio = () => {
       )}
        <tr style={{backgroundColor: "#a9f3d0"}}>
         <td colspan="4" className="fw-bold">Total Amount</td>
-        <td colspan="4" className="fw-bold">{data?.map(x => parseInt(x.amount)).reduce((a, b) => a + b)}</td>
+        <td colspan="4" className="fw-bold">{data?.length > 0 ? data?.map(x => parseInt(x.amount)).reduce((a, b) => a + b) : "-"}</td>
       </tr>
     </>
   );

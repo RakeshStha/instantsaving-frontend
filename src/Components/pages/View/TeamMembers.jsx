@@ -35,8 +35,19 @@ const TeamMembers = () => {
           <div class="card m-3" >
             <img src={Anjan} class="card-img-top" alt="..." height={'300vh'}/>
             <div class="card-body">
-              <h5 class="card-title">Anjan Maharjan</h5>
-              <p class="card-text"></p>
+              <h6 className="p-0 m-0 mb-2">Description</h6>
+              <div className="row">
+                <div className="col fw-bold">Name:</div>
+                <div className="col">Anjan Maharjan</div>
+              </div>
+              <div className="row">
+                <div className="col fw-bold">Contact:</div>
+                <div className="col">9861566468</div>
+              </div>
+              <div className="row">
+                <div className="col fw-bold">Email:</div>
+                <div className="col">-</div>
+              </div>
             </div>
           </div>
         </div>
@@ -44,8 +55,19 @@ const TeamMembers = () => {
           <div class="card m-3">
             <img src={Aseem} class="card-img-top" alt="..." height={'300vh'}/>
             <div class="card-body">
-              <h5 class="card-title">Aseem Maharjan</h5>
-              <p class="card-text"></p>
+              <h6 className="p-0 m-0 mb-2">Description</h6>
+              <div className="row">
+                <div className="col fw-bold">Name:</div>
+                <div className="col">Aseem Maharjan</div>
+              </div>
+              <div className="row">
+                <div className="col fw-bold">Contact:</div>
+                <div className="col">9849029127</div>
+              </div>
+              <div className="row">
+                <div className="col fw-bold">Email:</div>
+                <div className="col">-</div>
+              </div>
             </div>
           </div>
         </div>
@@ -53,8 +75,19 @@ const TeamMembers = () => {
           <div class="card m-3">
             <img src={Roj} class="card-img-top" alt="..." height={'300vh'}/>
             <div class="card-body">
-              <h5 class="card-title">Roj Maharjan</h5>
-              <p class="card-text"></p>
+              <h6 className="p-0 m-0 mb-2">Description</h6>
+              <div className="row">
+                <div className="col fw-bold">Name:</div>
+                <div className="col">Roj Maharjan</div>
+              </div>
+              <div className="row">
+                <div className="col fw-bold">Contact:</div>
+                <div className="col">9869254678</div>
+              </div>
+              <div className="row">
+                <div className="col fw-bold">Email:</div>
+                <div className="col">-</div>
+              </div>
             </div>
           </div>
         </div>
@@ -62,8 +95,19 @@ const TeamMembers = () => {
           <div class="card m-3">
             <img src={Rojan} class="card-img-top" alt="..." height={'300vh'}/>
             <div class="card-body">
-              <h5 class="card-title">Rojan Maharjan</h5>
-              <p class="card-text"></p>
+              <h6 className="p-0 m-0 mb-2">Description</h6>
+              <div className="row">
+                <div className="col fw-bold">Name:</div>
+                <div className="col">Rojan Maharjan</div>
+              </div>
+              <div className="row">
+                <div className="col fw-bold">Contact:</div>
+                <div className="col">9840875994</div>
+              </div>
+              <div className="row">
+                <div className="col fw-bold">Email:</div>
+                <div className="col">-</div>
+              </div>
             </div>
           </div>
         </div>
@@ -71,8 +115,19 @@ const TeamMembers = () => {
           <div class="card m-3">
             <img src={Suyog} class="card-img-top" alt="..." height={'300vh'}/>
             <div class="card-body">
-              <h5 class="card-title">Suyog Maharjan</h5>
-              <p class="card-text"></p>
+              <h6 className="p-0 m-0 mb-2">Description</h6>
+              <div className="row">
+                <div className="col fw-bold">Name:</div>
+                <div className="col">Suyog Maharjan</div>
+              </div>
+              <div className="row">
+                <div className="col fw-bold">Contact:</div>
+                <div className="col">9880195874</div>
+              </div>
+              <div className="row">
+                <div className="col fw-bold">Email:</div>
+                <div className="col">-</div>
+              </div>
             </div>
           </div>
         </div>
