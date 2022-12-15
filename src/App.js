@@ -13,7 +13,7 @@ import jwt_decode from 'jwt-decode';
 import setAuthToken from './utils/setAuthToken';
 import { setCurrentUser, logoutUser } from './redux/actions/authActions';
 import PrivateRoute from './Components/private-route/PrivateRoute';
-import { TeamMembers, YourPortfolio, TeamPortfolio, Transcation, Notifications, Rules} from "./Components/pages"
+import { TeamMembers, YourPortfolio, TeamPortfolio, Transcation, Notifications, Rules, ApplyLoan} from "./Components/pages"
 
 function App() {
   // Check for token to keep user logged in
@@ -46,6 +46,7 @@ function App() {
             <PrivateRoute exact path="/team-portfolio" component={TeamPortfolio} />
             <PrivateRoute exact path="/transcation" component={Transcation} />
             <PrivateRoute exact path="/notifications" component={Notifications} />
+            <PrivateRoute exact path="/apply-loan" component={ApplyLoan} />
             <PrivateRoute exact path="/rules" component={Rules} />
             <Route path="*" component={NotFound} />
           </Switch>

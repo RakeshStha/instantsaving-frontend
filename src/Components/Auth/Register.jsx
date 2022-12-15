@@ -50,40 +50,32 @@ class Register extends Component {
     return (
       <section className="register">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="signup-left">
-                <h4 className="text-capitalize">
-                  To Register With Our Application You should must Put Your Own
-                  mongoURI Id in the <kbd>config/default.json</kbd>
-                </h4>
+          <div className="row d-flex align-items-center justify-content-center">
+            {/* <div className="col-lg-6 d-flex align-items-center justify-content-center">
+              <div className="">
+                <h4 className="text-capitalize">Hello Mates,</h4>
+                <h2 className="text-capitalize">Welcome to our saving</h2>
               </div>
-            </div>
+            </div> */}
             <div className="col-lg-6">
-              <div className="signup-right">
+              <div className="card">
+                <div className="card-body">
                 <h1>Signup</h1>
                 <form noValidate onSubmit={this.registerSubmit}>
-                  <div class="form-row">
-                    <div class="form-group col-md-12">
+                    <div class="form-group mb-3">
                       <label htmlFor="name">Full Name</label> <br />
                       <input
                         type="text"
-                        // className="input-control"
                         placeholder="Enter your name"
                         id="name"
                         value={name}
                         onChange={this.onChangeRegister}
                         error={errors.name}
-                        className={classnames('', {
-                          invalid: errors.name
-                        })}
-                      />{' '}
-                      <br />
-                      <span className="text-danger">{errors.name}</span>
+                        className={`form-control ${errors?.name ? 'is-invalid' : ''}`}
+                      />
+                      <span className="text-danger my-1">{errors.name}</span>
                     </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group col-md-12">
+                    <div class="form-group mb-3">
                       <label htmlFor="Email">Email</label> <br />
                       <input
                         type="email"
@@ -93,16 +85,11 @@ class Register extends Component {
                         value={email}
                         onChange={this.onChangeRegister}
                         error={errors.email}
-                        className={classnames('', {
-                          invalid: errors.email
-                        })}
-                      />{' '}
-                      <br />
-                      <span className="text-danger">{errors.email}</span>
+                        className={`form-control ${errors?.email ? 'is-invalid' : ''}`}
+                      />
+                      <span className="text-danger my-1">{errors.email}</span>
                     </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group col-md-12">
+                    <div class="form-group mb-3">
                       <label htmlFor="Password">Password</label> <br />
                       <input
                         type="password"
@@ -112,16 +99,11 @@ class Register extends Component {
                         value={password}
                         onChange={this.onChangeRegister}
                         error={errors.password}
-                        className={classnames('', {
-                          invalid: errors.password
-                        })}
-                      />{' '}
-                      <br />
-                      <span className="text-danger">{errors.password}</span>
+                        className={`form-control ${errors?.password ? 'is-invalid' : ''}`}
+                      />
+                      <span className="text-danger my-1">{errors.password}</span>
                     </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group col-md-12">
+                    <div class="form-group mb-3">
                       <label htmlFor="Confirm Password">Confirm Password</label>
                       <br />
                       <input
@@ -132,32 +114,23 @@ class Register extends Component {
                         value={password2}
                         onChange={this.onChangeRegister}
                         error={errors.password2}
-                        className={classnames('', {
-                          invalid: errors.password2
-                        })}
-                      />{' '}
-                      <br />
-                      <span className="text-danger">{errors.password2}</span>
+                        className={`form-control ${errors?.password2 ? 'is-invalid' : ''}`}
+                      />
+                      <span className="text-danger my-1">{errors.password2}</span>
                     </div>
-                  </div>
-                  <div class="form-row">
                     <div class="form-group col-md-12">
                       <button type="submit" className="btn btn-md btn-register">
                         Signup
                       </button>
                     </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group col-md-12">
-                      <p>
+                    <p className='my-2 mt-3'>
                         Already have an account ?
                         <Link to="/login" className="text-success">
                           Login
                         </Link>
                       </p>
-                    </div>
-                  </div>
                 </form>
+                </div>
               </div>
             </div>
           </div>

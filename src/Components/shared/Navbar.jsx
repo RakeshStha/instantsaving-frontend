@@ -12,6 +12,7 @@ const Navbar = () =>{
 
   const username = localStorage.getItem("userName");
   const [name, setName] = useState("");
+  const [Type, setType] = useState();
 
   const dispatch = useDispatch();
 
@@ -23,6 +24,7 @@ const Navbar = () =>{
     dispatch(getUserDetail(username)).then((res) => {
       if (res?.status === 200) {
         setName(res?.data?.name);
+        setType(res?.data?.type);
       } else {
       }
     });
@@ -70,6 +72,7 @@ const Navbar = () =>{
                 Team Portfolio
               </Link>
             </li>
+           { Type === 'admin' ?
             <li class="nav-item">
               <Link
                 className={`nav-link ${pathname === '/transcation' ? 'active' : ''}`}
@@ -77,7 +80,16 @@ const Navbar = () =>{
               >
                 Transcation
               </Link>
-            </li>
+            </li> : null}
+            { Type === 'user' ?
+            <li class="nav-item">
+              <Link
+                className={`nav-link ${pathname === '/apply-loan' ? 'active' : ''}`}
+                to="/apply-loan"
+              >
+                Apply Loan
+              </Link>
+            </li> : null}
             <li class="nav-item">
               <Link
                 className={`nav-link ${pathname === '/notifications' ? 'active' : ''}`}
@@ -96,14 +108,16 @@ const Navbar = () =>{
           </li>
             </>
              : 
-            <li class="nav-item">
+           <>
+            {/* <li class="nav-item">
               <Link
                 className="nav-link btn btn-register button-outline-none"
                 to="/login"
               >
                 Login
               </Link>
-            </li>
+            </li> */}
+           </>
              } 
         </ul>
       </div>

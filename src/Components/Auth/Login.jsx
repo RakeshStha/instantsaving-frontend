@@ -50,14 +50,13 @@ class Login extends Component {
   render() {
     const { email, password, errors } = this.state;
     return (
-     <div className="row d-flex align-items-center justify-content-center logins">
+     <div className="row d-flex align-items-center justify-content-center">
       <div className="col-sm-6 col-lg-4">
       <div className="card">
         <div className="card-body">
         <form>
           <h1 className="h3 mb-3 fw-normal text-center"><img src={Logo} alt="Logo" /></h1>
-
-          <div className="form-floating">
+          <div className="form-floating mb-3">
             <input
               type="email"
               placeholder="Enter your email"
@@ -65,18 +64,15 @@ class Login extends Component {
               value={email}
               onChange={this.onChangeLogin}
               error={errors.email}
-              className={classnames("form-control", {
-                invalid: errors.email || errors.emailNotFound,
-              })}
+              className={`form-control ${ errors.email || errors.emailNotFound ? 'is-invalid' : ''}`}
             />
             <label for="floatingInput">Email address</label>
-            <br />
-            <span className="text-danger">
+            <span className="text-danger my-1">
               {errors.email}
               {errors.emailNotFound}
             </span>
           </div>
-          <div className="form-floating">
+          <div className="form-floating mb-3">
             <input
               type="password"
               placeholder="Enter your password"
@@ -84,14 +80,11 @@ class Login extends Component {
               value={password}
               onChange={this.onChangeLogin}
               error={errors.password}
-              className={classnames("form-control", {
-                invalid: errors.password || errors.passwordIncorrect,
-              })}
+              className={`form-control ${ errors.password || errors.passwordIncorrect ? 'is-invalid' : ''}`}      
             />
 
             <label for="floatingPassword">Password</label>
-            <br />
-            <span className="text-danger">
+            <span className="text-danger my-2">
               {errors.password}
               {errors.passwordIncorrect}
             </span>

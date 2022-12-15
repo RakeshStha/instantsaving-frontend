@@ -8,12 +8,10 @@ const Tables = (props) => {
   return (
         <table id={ID} cellspacing="0" cellpadding="0" className={`${className}`}>
           <thead>
-            <tr>
             {columns &&
                 columns?.map((o, i) => {
                   return<th scope="col" className={`${o.alignment}`}>{o.name}</th>
                 })}
-            </tr>
           </thead>
           <tbody className="text-center">{display_table}</tbody>
         </table>
