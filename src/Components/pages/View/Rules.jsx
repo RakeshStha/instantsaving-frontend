@@ -31,7 +31,7 @@ const Rules = () => {
           <li class="list-group-item d-flex justify-content-between align-items-start">
             <div class="ms-2 me-auto">
               <div class="fw-bold">Loan Processing</div>
-              For each members loan amount will be the Total Members Number/Total Members Saving Amount.
+              For each members loan amount will be the Total Members Saving Amount/Total Members Number.
             </div>
             {/* <span class="badge bg-primary rounded-pill">12%</span> */}
           </li>
