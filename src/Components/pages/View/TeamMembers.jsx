@@ -5,7 +5,7 @@ import { getTranscationDetail } from "../../../redux/actions/transcationActions"
 import Anjan from "../../assets/img/Teams/anjan.jpg"
 import Aseem from "../../assets/img/Teams/aseem_org.jpg"
 import Rojan from "../../assets/img/Teams/rojan.jpg"
-import Suyog from "../../assets/img/Teams/suyog.jpg"
+import Suyog from "../../assets/img/Teams/suyog.jpeg"
 import Roj from "../../assets/img/Teams/roj.jpg"
 import NoImage from "../../assets/img/Teams/no_image.png"
 
@@ -42,7 +42,9 @@ const TeamMembers = () => {
               </div>
               <div className="row">
                 <div className="col fw-bold">Contact:</div>
-                <div className="col">9861566468</div>
+                <div className="col">
+                <a href="tel:9861566468">9861566468</a>
+                </div>
               </div>
               <div className="row">
                 <div className="col fw-bold">Email:</div>
@@ -62,7 +64,9 @@ const TeamMembers = () => {
               </div>
               <div className="row">
                 <div className="col fw-bold">Contact:</div>
-                <div className="col">9849029127</div>
+                <div className="col">
+                <a href="tel:9849029127">9849029127</a>
+                </div>
               </div>
               <div className="row">
                 <div className="col fw-bold">Email:</div>
@@ -82,7 +86,9 @@ const TeamMembers = () => {
               </div>
               <div className="row">
                 <div className="col fw-bold">Contact:</div>
-                <div className="col">9869254678</div>
+                <div className="col">
+                <a href="tel:9869254678">9869254678</a>
+                </div>
               </div>
               <div className="row">
                 <div className="col fw-bold">Email:</div>
@@ -102,7 +108,9 @@ const TeamMembers = () => {
               </div>
               <div className="row">
                 <div className="col fw-bold">Contact:</div>
-                <div className="col">9840875994</div>
+                <div className="col">
+                <a href="tel:9840875994">9840875994</a>
+                </div>
               </div>
               <div className="row">
                 <div className="col fw-bold">Email:</div>
@@ -122,11 +130,15 @@ const TeamMembers = () => {
               </div>
               <div className="row">
                 <div className="col fw-bold">Contact:</div>
-                <div className="col">9880195874</div>
+                <div className="col">
+                <a href="tel:9880195874">9880195874</a>
+                </div>
               </div>
               <div className="row">
                 <div className="col fw-bold">Email:</div>
-                <div className="col">-</div>
+                <div className="col">
+                <a href = "mailto: suyogmaharjan977@gmail.com">suyogmaharjan977@gmail.com</a>
+                </div>
               </div>
             </div>
           </div>

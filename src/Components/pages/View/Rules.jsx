@@ -35,6 +35,25 @@ const Rules = () => {
             </div>
             {/* <span class="badge bg-primary rounded-pill">12%</span> */}
           </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">To apply loan</div>
+              To take loan members must request loan before 10 days.
+            </div>
+            {/* <span class="badge bg-primary rounded-pill">12%</span> */}
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Additional Members</div>
+              Members can be add as per the group members discussion.
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Tours/Travels</div>
+              Yearly one time travel/tour with interest get from saving + certain amount from each member.
+            </div>
+          </li>
         </ol>
         <h5 className="my-3">InstantSaving Directorial</h5>
         <ol class="list-group list-group-numbered">
@@ -45,6 +64,13 @@ const Rules = () => {
               member in a group must be leader for 6th month. Here they must
               manage all the activities i.e. saving, collecting and loan
               processing of certain amount from all the members
+            </div>
+            {/* <span class="badge bg-primary rounded-pill">14</span> */}
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Leadership</div>
+              Leadership will be shift every 6 month inside the team members.
             </div>
             {/* <span class="badge bg-primary rounded-pill">14</span> */}
           </li>
